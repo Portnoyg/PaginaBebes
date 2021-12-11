@@ -1,6 +1,32 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>
+    <title>Baby Page</title>
+    <meta charset "utf-8" />
   </head>
+  <body>
+    <h1>BAY PAGE</h1>
+    <h2> Bienvenido, a través de esta página podrás saber información sobre tu bebé</h2>
+    <script type= "text/javascript">
+    var nombre = prompt("Mucho gusto, ¿cómo es tu nombre?");
+    var madre = prompt("¡Hola! " + nombre + " ¿Deseas calcular \meses o \semanas ?");
+    var mes;
+    var semana;
+    var tiempo_final;
+    if (madre == "semanas")
+      {
+      var mes = prompt("¿Cuántos meses tienes?");
+    var tiempo_final = mes / 0.25
+    var tiempo_final = parseInt(tiempo_final)
+    document.write("Actualmente tienes " + tiempo_final + " semanas " + nombre + "¡Felicidades!");
+      }
+    else if (madre == "meses")
+      {
+      var semanas = prompt("¿Cuántas semanas tienes?");
+    var tiempo_final = semanas / 4
+    var tiempo_final = parseInt(tiempo_final)
+    document.write("Actualmente tienes " + tiempo_final + " meses " + nombre + " ¡Felicidades!");
+      }
+    </script>
+  </body>
 </html>
